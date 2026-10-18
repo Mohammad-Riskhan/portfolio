@@ -1,16 +1,25 @@
-# React + Vite
+# Mohammad Riskhan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React portfolio built with Vite, Tailwind CSS, and Lucide React. It presents Mohammad's full-stack engineering profile, project work, education, and areas of focus.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+## Validation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm run lint
+npm run build
+```
 
-## Expanding the ESLint configuration
+## Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/components/` — modular page sections and reusable project/skill components
+- `src/App.css` — responsive layout, theme, and portfolio-specific styles
+- `src/index.css` — global styles and Tailwind import
+
+The Skills section filters skill groups by domain. Project cards link to the GitHub repositories page because individual repository URLs have not yet been supplied.

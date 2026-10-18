@@ -22,12 +22,21 @@ function Header({ theme, onToggleTheme }) {
       </nav>
       <div className="header-actions flex items-center gap-2">
         <button
-          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+          aria-checked={theme === 'light'}
+          aria-label="Light theme"
           className="theme-toggle"
           onClick={onToggleTheme}
+          role="switch"
           type="button"
         >
-          <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={17} />
+          <span aria-hidden="true" className="theme-toggle-track">
+            <Icon className="theme-sun" name="sun" size={12} />
+            <Icon className="theme-moon" name="moon" size={12} />
+            <span className="theme-toggle-thumb" />
+          </span>
+          <span aria-hidden="true" className="theme-toggle-label">
+            {theme === 'dark' ? 'Dark' : 'Light'}
+          </span>
         </button>
         <a className="header-contact" href="#contact">
           Let&apos;s talk <Icon name="arrow" size={15} />

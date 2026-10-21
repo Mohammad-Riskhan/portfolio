@@ -1,7 +1,9 @@
 .site-shell {
+  position: relative;
+  z-index: 1;
   --bg: #101411;
-  --surface: #171d19;
-  --surface-raised: #1c241e;
+  --surface: rgb(23 29 25 / 32%);
+  --surface-raised: rgb(28 36 30 / 42%);
   --text: #f1f2eb;
   --muted: #a0aaa0;
   --subtle: #78827a;
@@ -14,7 +16,7 @@
   min-height: 100vh;
   overflow: hidden;
   color: var(--text);
-  background-color: var(--bg);
+  background-color: transparent;
   background-image:
     radial-gradient(ellipse at 82% 8%, rgb(135 185 74 / 7%), transparent 29%),
     radial-gradient(ellipse at 8% 36%, rgb(65 124 91 / 5%), transparent 25%),
@@ -27,8 +29,8 @@
 
 .site-shell[data-theme='light'] {
   --bg: #f7f8f3;
-  --surface: #fff;
-  --surface-raised: #f0f3eb;
+  --surface: rgb(255 255 255 / 42%);
+  --surface-raised: rgb(240 243 235 / 52%);
   --text: #20271f;
   --muted: #566153;
   --subtle: #758072;
@@ -210,6 +212,39 @@
 .contact-section {
   transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 220ms;
+}
+
+.about-note,
+.skill-group,
+.skill-filter,
+.skill-badge,
+.art-caption,
+.project-card,
+.project-visual,
+.project-graphic,
+.experience-card,
+.education-item,
+.education-result,
+.contact-link {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.about-note,
+.skill-group,
+.project-card,
+.experience-card,
+.contact-link {
+  box-shadow: 0 12px 32px rgb(0 0 0 / 8%);
+}
+
+.hero h1,
+.section-heading h2,
+.contact-copy h2,
+.project-body h3,
+.experience-card h3,
+.education-copy h3 {
+  text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
 }
 
 .header-contact {
@@ -467,7 +502,6 @@
   border: 1px solid var(--line);
   border-radius: 7px;
   box-shadow: 0 15px 40px rgb(0 0 0 / 15%);
-  backdrop-filter: blur(16px);
 }
 
 .caption-icon {
@@ -691,7 +725,7 @@
 }
 
 .projects-section {
-  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 27%, transparent) 48%, transparent);
+  background: transparent;
 }
 
 .projects-grid {
@@ -750,7 +784,7 @@
   overflow: hidden;
   background:
     radial-gradient(ellipse at 50% 56%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 57%),
-    linear-gradient(135deg, color-mix(in srgb, var(--surface-raised) 93%, transparent), color-mix(in srgb, var(--bg) 78%, transparent));
+    linear-gradient(135deg, color-mix(in srgb, var(--surface-raised) 55%, transparent), color-mix(in srgb, var(--bg) 28%, transparent));
   border: 1px solid var(--line);
   border-radius: 4px;
 }
@@ -1061,7 +1095,7 @@
 }
 
 .experience-section {
-  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 21%, transparent) 52%, transparent);
+  background: transparent;
 }
 
 .experience-grid {
@@ -1139,6 +1173,7 @@
   align-items: center;
   gap: 25px;
   padding: 23px 8px 23px 22px;
+  background: color-mix(in srgb, var(--surface) 42%, transparent);
   border-bottom: 1px solid var(--line);
 }
 
@@ -1192,9 +1227,7 @@
   margin-bottom: 72px;
   padding: 45px 45px;
   overflow: hidden;
-  background: linear-gradient(115deg, color-mix(in srgb, var(--surface-raised) 88%, transparent), color-mix(in srgb, var(--surface) 90%, transparent));
-  border: 1px solid color-mix(in srgb, var(--accent) 19%, var(--line));
-  border-radius: 7px;
+  background: transparent;
 }
 
 .contact-glow {

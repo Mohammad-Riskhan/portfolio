@@ -7,6 +7,7 @@ import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Projects from './components/Projects.jsx'
+import ScrollBackground from './components/ScrollBackground.jsx'
 import Skills from './components/Skills.jsx'
 import './App.css'
 
@@ -34,6 +35,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.style.colorScheme = theme
+    document.documentElement.style.backgroundColor = theme === 'dark' ? '#101411' : '#f7f8f3'
 
     const themeColor = document.querySelector('meta[name="theme-color"]')
     if (themeColor) {
@@ -48,19 +50,22 @@ function App() {
   }, [theme])
 
   return (
-    <div className="site-shell" data-theme={theme}>
-      <Header theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <ScrollBackground />
+      <div className="site-shell" data-theme={theme}>
+        <Header theme={theme} onToggleTheme={toggleTheme} />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 

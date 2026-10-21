@@ -1,4 +1,6 @@
 .site-shell {
+  position: relative;
+  z-index: 1;
   --bg: #101411;
   --surface: #171d19;
   --surface-raised: #1c241e;
@@ -14,7 +16,7 @@
   min-height: 100vh;
   overflow: hidden;
   color: var(--text);
-  background-color: var(--bg);
+  background-color: transparent;
   background-image:
     radial-gradient(ellipse at 82% 8%, rgb(135 185 74 / 7%), transparent 29%),
     radial-gradient(ellipse at 8% 36%, rgb(65 124 91 / 5%), transparent 25%),

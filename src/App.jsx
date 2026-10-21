@@ -35,6 +35,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.style.colorScheme = theme
+    document.documentElement.style.backgroundColor = theme === 'dark' ? '#101411' : '#f7f8f3'
 
     const themeColor = document.querySelector('meta[name="theme-color"]')
     if (themeColor) {

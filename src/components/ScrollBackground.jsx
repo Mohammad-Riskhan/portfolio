@@ -13,7 +13,7 @@ function ScrollBackground() {
 
   useEffect(() => {
     const canvas = canvasRef.current
-    const context = canvas?.getContext('2d')
+    const context = canvas?.getContext('2d', { alpha: true })
 
     if (!canvas || !context) {
       console.error('Unable to initialize the scroll background canvas.')
@@ -113,7 +113,7 @@ function ScrollBackground() {
         width: '100vw',
         height: '100vh',
         zIndex: 0,
-        opacity: 0.32,
+        opacity: 1,
         pointerEvents: 'none',
       }}
     />

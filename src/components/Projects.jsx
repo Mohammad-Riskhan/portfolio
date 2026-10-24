@@ -1,33 +1,35 @@
 import ProjectCard from './ProjectCard.jsx'
 
 const githubRepositories = 'https://github.com/Mohammad-Riskhan?tab=repositories'
+const posLiveUrl = 'https://saas-pos-syste.netlify.app/login'
 
 const projects = [
   {
     number: '01',
-    illustration: 'ai',
-    category: 'AI · FULL-STACK',
-    title: 'AI-Powered Full-Stack Assistant',
-    description: 'An intelligent platform with a responsive React frontend, a Node.js/Express API gateway, and Python microservices integrating LLMs for contextual data processing.',
-    technologies: ['Python', 'React', 'Node.js', 'Express', 'LLM APIs', 'LangChain'],
+    illustration: 'pos',
+    category: 'SAAS · MULTI-TENANT',
+    title: 'SaaS Point of Sale System',
+    description: 'Engineered and deployed a multi-tenant SaaS POS with administrative, owner, and cashier workflows, role-based access control, and secure API integration.',
+    technologies: ['React', 'Spring Boot', 'PostgreSQL', 'REST APIs', 'Docker'],
+    liveUrl: posLiveUrl,
     repositoryUrl: githubRepositories,
   },
   {
     number: '02',
-    illustration: 'pos',
-    category: 'WEB · MOBILE · MULTI-TENANT',
-    title: 'Cross-Platform Multi-Tenant POS',
-    description: 'A point-of-sale system spanning web and mobile clients, with role-based access control, secure Spring Boot REST APIs, and relational data management.',
-    technologies: ['React Native', 'React', 'Spring Boot', 'PostgreSQL', 'Antigravity'],
+    illustration: 'enterprise',
+    category: 'JAVA EE · ENTERPRISE WEB',
+    title: 'Java EE Enterprise Web Application',
+    description: 'Developed an enterprise-grade web application with Java EE, Servlets, and JSP, using MVC architecture and JDBC connection pooling.',
+    technologies: ['Java EE', 'Servlets', 'JSP', 'JDBC', 'MySQL', 'Apache Tomcat'],
     repositoryUrl: githubRepositories,
   },
   {
     number: '03',
     illustration: 'students',
-    category: 'BACKEND · APPLICATION',
+    category: 'JAVA · BACKEND',
     title: 'Student Management System',
-    description: 'An academic management backend built with Java and Spring Boot, using modular services, dependency injection, and object-oriented design.',
-    technologies: ['Java', 'Spring Boot', 'OOP', 'MySQL', 'Git', 'GitHub'],
+    description: 'Built an academic backend with object-oriented design, modular service architecture, and relational database optimization.',
+    technologies: ['Java', 'Spring Boot', 'OOP', 'MySQL', 'Git'],
     repositoryUrl: githubRepositories,
   },
 ]
@@ -40,7 +42,7 @@ function Projects() {
           <span className="section-index">03 / SELECTED WORK</span>
           <h2 id="projects-title">Built with <span>purpose.</span></h2>
         </div>
-        <p className="section-intro">Web, mobile, backend, and AI work that puts end-to-end engineering into practice.</p>
+        <p className="section-intro">Selected web and backend projects built with Java, Spring Boot, React, and relational databases.</p>
       </div>
       <div className="projects-grid">
         {projects.map((project) => <ProjectCard key={project.number} {...project} />)}

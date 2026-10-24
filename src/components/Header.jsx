@@ -4,7 +4,7 @@ const navigation = [
   ['About', '#about'],
   ['Skills', '#skills'],
   ['Projects', '#projects'],
-  ['Experience', '#experience'],
+  ['In progress', '#ongoing'],
   ['Education', '#education'],
 ]
 
@@ -21,6 +21,9 @@ function Header({ theme, onToggleTheme }) {
         ))}
       </nav>
       <div className="header-actions flex items-center gap-2">
+        <a className="header-download" href="/Riskhan_CV.pdf" download="Riskhan_CV.pdf">
+          Download CV
+        </a>
         <button
           aria-checked={theme === 'light'}
           aria-label="Light theme"

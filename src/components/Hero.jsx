@@ -6,24 +6,28 @@ function Hero() {
       <div className="hero-copy">
         <p className="eyebrow"><span className="status-dot" /> FULL-STACK DEVELOPMENT · AI ENGINEERING</p>
         <h1 id="hero-title">
-          Full-stack systems.<br />
-          <span>Intelligent futures.</span>
+          Software engineer.<br />
+          <span>Building what&apos;s next.</span>
         </h1>
         <p className="hero-description">
-          I&apos;m Mohammad, a Software Engineering graduate building end-to-end
-          web and mobile applications, with a growing focus on integrating AI
-          into useful products.
+          I&apos;m Mohammad Riskhan, a BSc (Hons) Software Engineering graduate
+          (Second Class Upper Division), seeking an internship or junior role.
+          I build production-ready web and mobile applications and aspire to
+          bring useful AI into the products I create.
         </p>
         <div className="hero-actions">
           <a className="button button-primary" href="#projects">
             Explore my work <Icon name="arrow" size={16} />
+          </a>
+          <a className="button button-secondary" href="/Riskhan_CV.pdf" download="Riskhan_CV.pdf">
+            Download CV <Icon name="download" size={16} />
           </a>
           <a className="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
         <div className="hero-meta">
           <span><span className="meta-label">BASED IN</span> Colombo, Sri Lanka</span>
           <span className="meta-divider" aria-hidden="true" />
-          <span><span className="meta-label">FOCUS</span> Full-stack · AI</span>
+          <span><span className="meta-label">GRADUATED</span> 2026</span>
         </div>
       </div>
       <div className="hero-art" aria-label="A visual illustration of connected ideas">

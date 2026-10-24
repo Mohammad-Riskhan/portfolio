@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Education from './components/Education.jsx'
-import Experience from './components/Experience.jsx'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
+import OngoingProjects from './components/OngoingProjects.jsx'
 import Projects from './components/Projects.jsx'
 import ScrollBackground from './components/ScrollBackground.jsx'
 import Skills from './components/Skills.jsx'
@@ -59,7 +59,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          <Experience />
+          <OngoingProjects />
           <Education />
           <Contact />
         </main>

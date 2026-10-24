@@ -16,27 +16,18 @@ function Education() {
           <div className="education-copy">
             <span className="education-level">UNDERGRADUATE DEGREE</span>
             <h3>B.Sc. (Hons) in Software Engineering</h3>
-            <p>Edgehill University (UK) · Asian Institute of Business &amp; Science, Colombo</p>
+            <p>Edgehill University (UK) · Asian Institute of Business &amp; Science at Colombo</p>
           </div>
-          <span className="education-result">Second Class Upper Division</span>
+          <span className="education-result">Second Class Upper · 2026</span>
         </article>
         <article className="education-item">
           <span className="education-marker" />
           <div className="education-copy">
-            <span className="education-level">HIGHER NATIONAL DIPLOMA</span>
+            <span className="education-level">DIPLOMA</span>
             <h3>BTech HND in Software Engineering</h3>
-            <p>Asian Institute of Business &amp; Science, Colombo</p>
+            <p>AIBS Colombo</p>
           </div>
-          <span className="education-result">Completed</span>
-        </article>
-        <article className="education-item">
-          <span className="education-marker" />
-          <div className="education-copy">
-            <span className="education-level">ADVANCED LEVEL</span>
-            <h3>G.C.E. Advanced Level</h3>
-            <p>Bio Science Stream</p>
-          </div>
-          <span className="education-result">Completed</span>
+          <span className="education-result">Software Engineering</span>
         </article>
       </div>
     </section>

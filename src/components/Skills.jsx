@@ -4,40 +4,40 @@ import SkillBadge from './SkillBadge.jsx'
 
 const groups = [
   {
-    category: 'AI',
-    icon: 'ai',
-    title: 'AI & machine learning',
-    skills: ['Python', 'Prompt Engineering', 'LangChain & LLM Integration', 'Vector Databases', 'Machine Learning Fundamentals'],
+    category: 'Languages',
+    icon: 'code',
+    title: 'Programming languages',
+    skills: ['Java', 'Java EE', 'JavaScript', 'TypeScript', 'Python'],
   },
   {
     category: 'Frontend',
     icon: 'monitor',
     title: 'Frontend & mobile',
-    skills: ['React.js', 'React Native', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Tailwind CSS', 'State Management & Responsive UI'],
+    skills: ['React.js', 'React Native', 'Tailwind CSS', 'HTML5', 'CSS3'],
   },
   {
     category: 'Backend',
     icon: 'server',
     title: 'Backend & APIs',
-    skills: ['Node.js', 'Express.js', 'Java', 'Spring Boot', 'RESTful API Design & JWT Authentication', 'Microservices Architecture Concepts'],
+    skills: ['Spring Boot', 'Node.js', 'Express.js', 'Servlets', 'JSP', 'RESTful APIs'],
   },
   {
     category: 'Data',
     icon: 'database',
     title: 'Databases & storage',
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Database Modeling & Optimization'],
+    skills: ['MySQL', 'PostgreSQL'],
   },
   {
     category: 'DevOps',
     icon: 'git',
-    title: 'DevOps & workflow',
-    skills: ['Git', 'GitHub', 'Postman', 'Antigravity', 'CI/CD Pipelines & Deployment Basics'],
+    title: 'DevOps, cloud & deployment',
+    skills: ['AWS', 'Docker', 'CI/CD Pipelines', 'Git', 'GitHub', 'Postman'],
   },
   {
     category: 'Core',
     icon: 'workflow',
-    title: 'Core engineering',
-    skills: ['Object-Oriented Programming (OOP)', 'Asynchronous Programming', 'Multi-tenant Architecture', 'CRUD & Enterprise Application Development'],
+    title: 'Core concepts',
+    skills: ['Object-Oriented Programming (OOP)', 'Microservices Architecture', 'CRUD Development'],
   },
 ]
 
@@ -56,7 +56,7 @@ function Skills() {
           <span className="section-index">02 / TOOLKIT</span>
           <h2 id="skills-title">A practical <span>foundation.</span></h2>
         </div>
-        <p className="section-intro">Explore the tools and concepts I use across AI, full-stack development, and software engineering.</p>
+        <p className="section-intro">Technologies and engineering fundamentals from my full-stack software development toolkit.</p>
       </div>
       <div className="skill-filters" role="group" aria-label="Filter skills by domain">
         {filters.map((filter) => (

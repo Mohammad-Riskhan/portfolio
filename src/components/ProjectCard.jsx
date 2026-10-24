@@ -24,6 +24,18 @@ function ProjectIllustration({ type }) {
     )
   }
 
+  if (type === 'enterprise') {
+    return (
+      <div className="enterprise-window">
+        <div className="window-dots"><i /><i /><i /><span>JAVA EE / MVC</span></div>
+        <div className="enterprise-code">
+          <span /><span /><span /><span /><span />
+        </div>
+        <div className="enterprise-status"><i /> SERVLET · JDBC · MYSQL</div>
+      </div>
+    )
+  }
+
   return (
     <div className="pos-window">
       <div className="pos-sidebar"><span /><span /><span /><span /></div>
@@ -36,7 +48,7 @@ function ProjectIllustration({ type }) {
   )
 }
 
-function ProjectCard({ number, illustration, title, description, technologies, category, repositoryUrl }) {
+function ProjectCard({ number, illustration, title, description, technologies, category, liveUrl, repositoryUrl }) {
   return (
     <article className="project-card">
       <div className="project-topline">
@@ -55,9 +67,18 @@ function ProjectCard({ number, illustration, title, description, technologies, c
         <div className="project-tags">
           {technologies.map((technology) => <SkillBadge key={technology}>{technology}</SkillBadge>)}
         </div>
-        <a className="project-repository" href={repositoryUrl} target="_blank" rel="noreferrer">
-          Browse GitHub repositories <Icon name="arrow" size={14} />
-        </a>
+        <div className="project-links">
+          {liveUrl && (
+            <a className="project-repository" href={liveUrl} target="_blank" rel="noreferrer">
+              Live deployment <Icon name="arrow" size={14} />
+            </a>
+          )}
+          {repositoryUrl && (
+            <a className="project-repository" href={repositoryUrl} target="_blank" rel="noreferrer">
+              GitHub profile <Icon name="arrow" size={14} />
+            </a>
+          )}
+        </div>
       </div>
     </article>
   )

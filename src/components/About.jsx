@@ -9,20 +9,21 @@ function About() {
       </div>
       <div className="about-content">
         <p>
-          I&apos;m a Software Engineering graduate with a <strong>BSc (Hons), Second
-          Class Upper Division</strong>. I build across the stack, connecting
-          responsive web and mobile interfaces with APIs, backend services, and
-          data systems.
+          I&apos;m a Software Engineering graduate with a <strong>BSc (Hons) in
+          Software Engineering, Second Class Upper Division</strong>. I build
+          production-ready web and mobile applications, connecting responsive
+          interfaces with APIs, backend services, and data systems.
         </p>
         <p>
-          My toolkit spans React, React Native, Node.js, Express, Spring Boot,
-          and Java, backed by relational and NoSQL databases. I&apos;m especially
-          interested in clean architecture, high-performance APIs, and applying
-          AI to solve real problems.
+          My toolkit spans React, React Native, Java EE, Spring Boot, and
+          Node.js, supported by MySQL and PostgreSQL. I&apos;m seeking an
+          internship or junior role where I can contribute clean code and
+          scalable architecture while growing as a full-stack developer and
+          aspiring AI engineer.
         </p>
         <div className="about-note">
           <Icon name="sparkles" size={18} />
-          <span>Bridging <strong>robust application engineering</strong> with <strong>intelligent AI systems.</strong></span>
+          <span>Focused on <strong>clean code, scalable architecture,</strong> and <strong>continuous delivery.</strong></span>
         </div>
       </div>
     </section>
